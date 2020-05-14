@@ -1,0 +1,25 @@
+Exercise 1.1 - Solutions
+
+1.
+
+A statement; is a part of a program, which specifies a single step
+in an algorithm. A comment is a part of a program that contains
+information about the program, but has no effect when it runs.
+
+2.
+
+When a program is said to be portable, it means the program can run
+on more than one computer.
+
+3.
+
+**In common English, the word compile, means to convert high-level programming code
+into machine code so that it can be executed by the CPU.
+
+4.
+
+An executable, is another name for object code that's ready to run on certain hardware.
+The term 'executable' is used as a noun because after compilation has finished, a file
+is created from the high-level source code that can be run multiple times, it can be
+executed more than once which is why the term is used as a noun, it is describing a
+file that can be run multiple times.
