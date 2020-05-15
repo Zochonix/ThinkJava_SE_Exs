@@ -1,0 +1,10 @@
+Exercise 3.1 - Solution
+
+If you try to display an int value with %f, you will get an
+IllegalFormatConversionException. If you try to display a
+double using %d you will get an IllegalFormatConversionException
+because d != java.lang.Double, %d is used to display integers.
+
+If you try to use two format specifiers but only
+provide a single value, the program will read the
+first format specifier only.
