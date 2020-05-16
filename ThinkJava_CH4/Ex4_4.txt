@@ -1,0 +1,13 @@
+Exercise 4.4 - Solutions
+
+1.
+
+If you invoke a value method and don't do anything with the result,
+then the program will carry on as normal but the value that was
+meant to be returned will not be returned, there is
+no major exception or error.
+
+2.
+
+If you try to use a void method as part of an expression, you will
+get multiple compilation errors.

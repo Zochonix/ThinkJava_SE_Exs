@@ -1,0 +1,9 @@
+Exercise 4.3 - Solution
+
+2.
+
+The output of the program is:
+
+No, I wug.
+You wugga wug.
+I wug.

@@ -1,0 +1,16 @@
+Exercise 4.2 - Solutions
+
+3. 
+
+When baffle gets invoked, the value of the blimp parameter is
+"rattle".
+
+4.
+
+The output of the program is the following text appearing
+on the console in the same format.
+
+ik
+rattle
+ping zoop
+boo-wa-ha-ha
