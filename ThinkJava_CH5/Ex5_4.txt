@@ -1,0 +1,12 @@
+Exercise 5.4 - Solutions
+
+True
+Error
+True
+Error
+False
+True
+False
+Error
+True
+False
