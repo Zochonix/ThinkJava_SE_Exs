@@ -1,0 +1,8 @@
+Exercise 5.5 - Solutions
+
+The out put of the program is:
+
+true
+true
+ping
+pong
