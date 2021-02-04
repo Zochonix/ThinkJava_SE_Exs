@@ -2,6 +2,9 @@
 
 Status: ___In Development.___
 
+- [X] Latest Update: _Added the solution code for Ex6_5_ 
+- [ ] Next Update: _Solution code for Ex6_6_
+
 - - - -
 
 Hello there!
