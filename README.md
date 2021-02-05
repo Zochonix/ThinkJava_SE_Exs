@@ -41,10 +41,10 @@ __Key Stuff__ :
 
 - - - -
 
-- [X] Latest Update: _Added the solution code for Ex6_5_ 
-- [ ] Next Update: _Solution code for Ex6_6_
+- [X] Latest Update: _Added the solution code for Ex6_6_ 
+- [ ] Next Update: _Solution code for Ex7_1, Ex7_2 and Ex7_3._
 
-__Next Update Released @ Sometime Today (05/02/2021).__
+__Next Update Released @ 16:00 UTC (06/02/2021).__
 
 In the meantime, I hope you're all well and I'll speak with you again soon. 
 
