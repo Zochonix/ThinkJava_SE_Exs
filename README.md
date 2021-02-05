@@ -44,7 +44,7 @@ __Key Stuff__ :
 - [X] Latest Update: _Added the solution code for Ex6_5_ 
 - [ ] Next Update: _Solution code for Ex6_6_
 
-__Next Update Released @ 16:00UTC (05/02/2021).__
+__Next Update Released @ Sometime Today (05/02/2021).__
 
 In the meantime, I hope you're all well and I'll speak with you again soon. 
 
