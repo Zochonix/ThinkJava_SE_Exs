@@ -42,7 +42,7 @@ __Key Stuff__ :
 - - - -
 
 - [X] Latest Update: _Added the solution code for Ex6_6_ 
-- [ ] Next Update: _Solution code for Ex7_1, Ex7_2 and Ex7_3._
+- [ ] Next Update: _Solution code for Ex7_2 and Ex7_3._
 
 __Next Update Released @ 16:00 UTC (06/02/2021).__
 
