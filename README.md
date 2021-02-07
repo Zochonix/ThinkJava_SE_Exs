@@ -41,8 +41,8 @@ __Key Stuff__ :
 
 - - - -
 
-- [X] Latest Update: _Added the solutions for Ex7_2 (Need to upload the Stack Diagram)_ 
-- [ ] Next Update: _Solution code for and Ex7_3._
+- [X] Latest Update: _Uploaded the Stack Diagram for Ex7_2_ 
+- [ ] Next Update: _Solution code for Ex7_3._
 
 __Next Update Released @ 08/02/2021.__
 
