@@ -44,7 +44,7 @@ __Key Stuff__ :
 - [X] Latest Update: _Uploaded the Stack Diagram for Ex7_2_ 
 - [ ] Next Update: _Solution code for Ex7_3._
 
-__Next Update Released @ 08/02/2021.__
+__Next Update Released @ 09/02/2021.__
 
 In the meantime, I hope you're all well and I'll speak with you again soon. 
 
