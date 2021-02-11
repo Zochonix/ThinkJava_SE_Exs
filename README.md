@@ -41,8 +41,8 @@ __Key Stuff__ :
 
 - - - -
 
-- [X] Latest Update: _Uploaded the Solution Code for Ex7_6_ 
-- [ ] Next Update: _Solution code for Ex7_7._
+- [X] Latest Update: _Uploaded the Solution Code for Ex7_7 and 7_8_ 
+- [ ] Next Update: _Solution code for Ex8_1._
 
 __Next Update Released @ 11/02/2021.__
 
