@@ -7,6 +7,7 @@ public class Recurse {
 		
 		printString(input);
 		printBackward(input);
+		String bob = reverseString(input);
 
 	}
 	
@@ -57,6 +58,27 @@ public class Recurse {
 			
 		printBackward(rest(s));
 		System.out.println(first(s));
+		
+		}
+		
+	}
+	
+	public static String reverseString(String s) {
+		
+		if (length(s) == 1) {
+			
+			char firstLetter = first(s);
+			String firstLetter_String = Character.toString(firstLetter);
+			return firstLetter_String;
+			
+		}
+		
+		else {
+			
+		String reversedString = reverseString(rest(s));
+		System.out.println(reversedString);
+		
+		return reversedString;
 		
 		}
 		
