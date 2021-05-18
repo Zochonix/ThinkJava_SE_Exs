@@ -1,6 +1,6 @@
 # ThinkJava_SE_Exs
 
-Status: ___In Development.___
+Status: ___Resuming.___
 
 - - - -
 
@@ -44,7 +44,7 @@ __Key Stuff__ :
 - [X] Latest Update: _Uploaded the Solution for Ex8_7._ 
 - [ ] Next Update: _Solution code for Ex9_1._
 
-__Next Update Released @ 08/03/2021.__
+__Next Update Released @ TBD.__
 
 In the meantime, I hope you're all well and I'll speak with you again soon. 
 
