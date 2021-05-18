@@ -5,9 +5,9 @@ public class Recurse {
 		
 		String input = "apple";
 		
-		printString(input);
-		printBackward(input);
-		String bob = reverseString(input);
+		
+		
+		System.out.println(reverseString(input));
 
 	}
 	
@@ -67,20 +67,30 @@ public class Recurse {
 		
 		if (length(s) == 1) {
 			
-			char firstLetter = first(s);
-			String firstLetter_String = Character.toString(firstLetter);
-			return firstLetter_String;
+			return s;
 			
 		}
 		
 		else {
 			
 		String reversedString = reverseString(rest(s));
-		System.out.println(reversedString);
+		String result = reversedString + first(s);
 		
-		return reversedString;
+		return result;
 		
 		}
+		
+	}
+	
+	public static Boolean isPalindrome(String s) {
+		
+		if ((length(s) == 1) || (length(s) == 2 && s[0].) ) {
+			
+			return s;
+			
+		}
+		
+		return false;
 		
 	}
 
