@@ -41,10 +41,10 @@ __Key Stuff__ :
 
 - - - -
 
-- [X] Latest Update: _Uploaded the Solution for Ex9_3._ 
-- [ ] Next Update: _Solution code for Ex9_4._
+- [X] Latest Update: _Uploaded the Solution files for Chapter 11._ 
+- [ ] Next Update: _Solution files for Chapter 12._
 
-__Next Update Released on the 28th of July.__
+__Next Update Released on the 18th of August.__
 
 In the meantime, I hope you're all well and I'll speak with you again soon. 
 
