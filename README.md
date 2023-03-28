@@ -25,21 +25,21 @@ __Key Stuff__ :
 <details>
   <summary>Repository Restrictions</summary>
   <p></p>
-  <p>As far as I'm concerned, you are ok to do whatever you want with the code you find in this repository. I'm not too fussed about it.</p>
+  <p>As far as I'm concerned, you can do whatever you want with the code you find in this repository.</p>
 </details>
 
 <details>
   <summary>Future Updates</summary>
   <p></p>
-  <p>Right now, I still have to finish off code for many of the chapters and check it before sending it to the repository so this project is still in progress and will be continuously updated, I'll probably have to update this read me though if I make the rep public. :laughing:</p>
+  <p>I'm still working on solving a few of the final problems.</p>
 </details>
 
 - - - -
 
-Latest Update: _Uploaded the Solution files for Chapter 11._ 
+Latest Update: -
 
-In the meantime, I hope you're all well and I'll speak with you again soon. 
+In the meantime, I hope you're well and I'll update this page again soon.
 
 All the best,
 
-_Zochonis._ :facepunch:
+_Zochonix._ :facepunch:
