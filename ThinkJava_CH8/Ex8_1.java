@@ -1,4 +1,21 @@
+/**
+*
+* A solution class for the first part of exercise 8. (8.1)
+*
+* @author Kane Kennedy
+* @version 1.0
+*
+*/
+
 public class Ex8_1 {
+
+	/**
+	*
+	* Creates primitive and calls the method.
+	*
+	* @param args A collection of inputs specified by the user at execution.
+	*
+	*/
 
 	public static void main(String[] args) {
 		
@@ -7,6 +24,14 @@ public class Ex8_1 {
 		printBeerBottles(numOfBottles);
 
 	}
+
+	/**
+	*
+	* Uses recursion to print the lyrics to a song.
+	*
+	* @param numOfBottles The number of lyrics to be printed.
+	*
+	*/
 	
 	public static void printBeerBottles(int numOfBottles) {
 		

@@ -1,5 +1,21 @@
+/**
+*
+* A solution class for the fifth part of exercise 7. (7.5)
+*
+* @author Kane Kennedy
+* @version 1.0
+*
+*/
 
 public class Ex7_5 {
+
+	/**
+	*
+	* Creates an integer primitive and an integer array to compare for factors
+	*
+	* @param args A collection of inputs specified by the user at execution.
+	*
+	*/
 
 	public static void main(String[] args) {
 		
@@ -9,6 +25,17 @@ public class Ex7_5 {
 		System.out.println(areFactors(n, array));
 
 	}
+
+	/**
+	*
+	* Returns a boolean if all values in array are factors of n.
+	*
+	* @param n An integer to use for comparison with array
+	* @param numbers An array of integers to use as comparison with n
+	* @return A boolean value that indicates whether
+	* n is divisible by all values in array or not.
+	*
+	*/
 	
 	public static boolean areFactors(int n, int[] numbers) {
 		

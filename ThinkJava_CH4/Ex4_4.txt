@@ -2,7 +2,7 @@ Exercise 4.4 - Solutions
 
 1.
 
-If you invoke a value method and don't do anything with the result,
+If you call a function, and don't do anything with the result,
 then the program will carry on as normal but the value that was
 meant to be returned will not be returned, there is
 no major exception or error.

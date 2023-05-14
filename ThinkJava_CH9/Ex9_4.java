@@ -1,5 +1,21 @@
+/**
+*
+* A solution class for the fourth part of exercise 9. (9.4)
+*
+* @author Kane Kennedy
+* @version 1.0
+*
+*/
 
 public class Ex9_4 {
+
+	/**
+	*
+	* Calls methods.
+	*
+	* @param args A collection of inputs specified by the user at execution.
+	*
+	*/
 
 	public static void main(String[] args) {
 		
@@ -7,6 +23,17 @@ public class Ex9_4 {
 		Ex9_4_6();
 
 	}
+
+	/**
+	*
+	* Recursively calculates Euler's number series, up to a given point,
+	* with a given value of x.
+	*
+	* @param x The exponential to use with Euler's number.
+	* @param n The number of terms to be calculated.
+	* @return A double value that represents the sum of the sequence.
+	*
+	*/
 	
 	public static double myexp(double x, double n) {
 		
@@ -32,7 +59,7 @@ public class Ex9_4 {
 		
 		// Denominator
 		
-		for (double z = n; z > 0; z--) {
+		for (double z = n; z != 0; z--) {
 			
 			if (z == n) {
 				
@@ -57,6 +84,14 @@ public class Ex9_4 {
 		return answer;
 		
 	}
+
+	/**
+	*
+	* Calls methods to check the accuracy of each on a specific value.
+	*
+	* @param x The value to use with each method.
+	*
+	*/
 	
 	public static void check(double x) {
 		
@@ -66,6 +101,12 @@ public class Ex9_4 {
 		System.out.println();
 		
 	}
+
+	/**
+	*
+	* Uses a switch statement to check accuracy of methods with different values.
+	*
+	*/
 	
 	public static void Ex9_4_5() {
 		
@@ -98,6 +139,12 @@ public class Ex9_4 {
 		}
 		
 	}
+
+	/**
+	*
+	* Uses a loop statement to check accuracy of methods with different values.
+	*
+	*/
 	
 	public static void Ex9_4_6() {
 		

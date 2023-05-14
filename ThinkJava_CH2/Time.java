@@ -1,4 +1,21 @@
+/**
+*
+* Solution class for the final part of Ex2. (2.3)
+*
+* @author Kane Kennedy
+* @version 1.0
+*
+*/
+
 public class Time {
+
+	/**
+	*
+	* Displays the difference between two times of day.
+	*
+	* @param args A collection of inputs specified by the user at execution.
+	*
+	*/
 
 	public static void main(String[] args) {
 		
@@ -21,8 +38,8 @@ public class Time {
 		System.out.println("The number of seconds that are remaining today are: " + secondsRemainingInDay);
 		System.out.println("The percentage of the day that has passed is: " + percentOfDay + "%");
 		
-		// Assign the next set of required variables for the
-		// current time that has elapsed since the start of the exercise.
+		/* Assign the next set of required variables for the
+		   current time that has elapsed since the start of the exercise. */
 		
 		int currentHour, currentMinute, currentSecond, currentSecondsPassedSinceMidnight;
 		
@@ -33,7 +50,7 @@ public class Time {
 		currentSecond = 8;
 		currentSecondsPassedSinceMidnight = currentSecond + currentMinute * 60 + currentHour * 3600;
 		
-		// Calculate the time that has elapsed.
+		// Calculate the amount of time that has elapsed.
 		
 		int timeElapsed = currentSecondsPassedSinceMidnight - secondsPassedSinceMidnight;
 		

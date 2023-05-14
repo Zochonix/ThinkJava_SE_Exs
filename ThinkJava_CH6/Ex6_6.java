@@ -1,16 +1,33 @@
-// Import the Java scanner class.
-
 import java.util.Scanner;
+
+/**
+*
+* A solution class for the final part of exercise 6. (6.6)
+*
+* @author Kane Kennedy
+* @version 1.0
+*
+*/
 
 public class Ex6_6 {
 
+	/**
+	*
+	* Creates variables to store values for the program and prints the final result. 
+	*
+	* @param args A collection of inputs specified by the user at execution.
+	*
+	*/
+
 	public static void main(String[] args) {
 		
-		// Setup variables to handle input
+		/* Create variables to store tiles for the scrabble game and the word
+		   that we want to see if we can make using the tiles. Also create a
+		   scanner object to take user input. */
 		
-		String tiles; // Store the string to be used for tiles
-		String word; // Store the string to be used for the word to be made
-		Boolean wordInString; // Holds the condition for whether the word can be made from the tiles or not.
+		String tiles;
+		String word;
+		Boolean wordInString;
 		Scanner input = new Scanner(System.in);
 		
 		System.out.println("Hello, please enter some letters:");
@@ -37,8 +54,20 @@ public class Ex6_6 {
 		
 
 	}
+
+	/**
+	*
+	* Loops through a given word, and counts the number of times each letter is
+	* present in both the word itself and the tiles. If a letter appears more times
+	* in the word than the tiles, return false otherwise return true.
+	*
+	* @param word The word that we want to make from the tiles.
+	* @param tiles The letters which we can use to potentially make the word.
+	* @return A true/false value indicating whether the word can be made from the given tiles.
+	*
+	*/
 	
-	public static boolean isWordInString(String word, String comparator) {
+	public static boolean isWordInString(String word, String tiles) {
 			
 		// Loop through the word
 		
@@ -54,7 +83,7 @@ public class Ex6_6 {
 			int letterOccurences_comp = 0;
 			
 			letterOccurences_word = countOccurences(currentLetterInWord, word);
-			letterOccurences_comp = countOccurences(currentLetterInWord, comparator);
+			letterOccurences_comp = countOccurences(currentLetterInWord, tiles);
 			
 			if (letterOccurences_word > letterOccurences_comp) {
 				
@@ -67,6 +96,16 @@ public class Ex6_6 {
 		return true;
 		
 	}
+
+	/**
+	*
+	* Loops through a given word, and counts the number of times each letter appears.
+	*
+	* @param letter The letter which is being counted
+	* @param word The word which is being searched through.
+	* @return An integer containing the number of times the letter appears in the word
+	*
+	*/
 	
 	public static int countOccurences(String letter, String word) {
 		

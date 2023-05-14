@@ -1,23 +1,38 @@
-// Import Required Classes
-
 import java.util.Scanner;
+
+/**
+*
+* A solution class for the fourt part of exercise 6. (6.4)
+*
+* @author Kane Kennedy
+* @version 1.0
+*
+*/
 
 public class Ex6_4 {
 
+	/**
+	*
+	* Creates variables to store values for the program and prints the result.
+	*
+	* @param args A collection of inputs specified by the user at execution.
+	*
+	*/
+
 	public static void main(String[] args) {
 		
-		// Setup variables to handle input and check for abecedarianality
+		/* Create a boolean to confirm whether the input is abecedarian and a
+		   scanner to read user input. */
 		
-		String word;
 		Boolean isAbecedarian;
 		Scanner input = new Scanner(System.in);
 		
 		// Ask the user to enter a string.
 		
 		System.out.println("Please enter a string:");
-		word = input.nextLine();
+		String word = input.nextLine();
 		
-		// Confirm input.
+		// Confirm their input.
 		
 		System.out.println("The word you have entered is: " + word);
 		
@@ -46,6 +61,18 @@ public class Ex6_4 {
 		input.close();
 		
 	}
+
+	
+	/**
+	*
+	* Verify that the enmtered input is abecedarian by comparing the unicode for
+	* each letter in the input.
+	*
+	* @param word Input that is given by the user
+	* @return A true/false value indicating whether the ionput is abecedarian
+	* or not.
+	*
+	*/
 	
 	public static boolean isAbecedarian(String word) {
 		

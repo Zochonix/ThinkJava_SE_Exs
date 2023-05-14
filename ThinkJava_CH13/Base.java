@@ -1,15 +1,8 @@
-
 public class Base {
 
 	public static void main(String[] args) {
 		
 		Deck deck = new Deck();
-		
-		runGame(deck);
-			
-	}
-	
-	public static void runGame(Deck deck) {
 		
 		deck.shuffle();
 			
@@ -43,110 +36,151 @@ public class Base {
 			else {
 				
 				// Ex13_5
-				
-				executeTieHandler(diff, c1, c2, p1, p2);
-				
-			}
-			
-			endHandler(p1, p2);
-		
-		}
-		
-	}
+
+				Pile tiePile = new Pile();
+				Boolean drawSolved = false;
+				Boolean isInitialLoop = true;
+
+				while (drawSolved != true) {
+
+					/* Draw 3 cards from the pile of each player. When drawing a card, check
+					   to confim that the pile is not empty, so no exception is thrown. */
+
+					for (int i = 0; i < 3; i++) {
+
+						if (!(p1.isEmpty())) {
+
+							Card tieP1 = p1.popCard();
+							tiePile.addCard(tieP1);
+
+						}
+
+						else {
+
+							System.out.println("Player 1 is empty");
+							drawSolved = true;
+						
+						}
+
+					}
+
+					if (drawSolved != true) {
+
+						for (int j = 0; j < 3; j++) {
+
+							if (!(p2.isEmpty())) {
+
+								Card tieP2 = p2.popCard();
+								tiePile.addCard(tieP2);
+
+							}
+
+							else {
+
+								System.out.println("Player 2 is empty");
+								drawSolved = true;
+						
+							}
+
+						}
+					}
+
+					if (drawSolved != true) {
+
+						/* If it's the first loop, add the original cards. */
+
+						if (isInitialLoop = true) {
+
+							tiePile.addCard(c1);
+							tiePile.addCard(c1);
+							isInitialLoop = false;
+
+						}
+					
+					}
+
+					/* Draw one more card from each pile and compare them. */
+
+					Card tieBreakerP1 = new Card(0, 0);
+					Card tieBreakerP2 = new Card(0, 0);
+
+					if (drawSolved != true) {
+
+						if (!(p1.isEmpty())) {
+
+							tieBreakerP1 = p1.popCard();
+
+						}
 	
-	public static void executeTieHandler(int diff, Card c1, Card c2, Pile p1, Pile p2) {
-		
-		Pile tiePile = new Pile();
-		
-		tiePile.addCard(c1);
-		tiePile.addCard(c2);
-		
-		int p1_cards = 0;
-		int p2_cards = 0;
-		
-		for (int i = 0; i < 6; i++) {
-			
-			if (p1_cards < 3) {
+						else {
+
+							System.out.println("Player 1 is empty");
+							drawSolved = true;
+
+						}
+
+					}
+
+					if (drawSolved != true) {
+
+						if (!(p2.isEmpty())) {
+
+							tieBreakerP2 = p2.popCard();
+
+						}
+	
+						else {
+
+							System.out.println("Player 2 is empty");
+							drawSolved = true;
+
+						}
+
+					}
+
+					int tieDiff = tieBreakerP1.getRank() - tieBreakerP2.getRank();
+					
+					/* Whoever has won, takes all cards, including tiebreaker. */
+
+					if (drawSolved != true) {
+
+ 						if (tieDiff > 0) {
 				
-				if (!p1.isEmpty()) {
-					
-					tiePile.addCard(p1.popCard());
-					p1_cards++;
-					
-				}
+							while (!(tiePile.isEmpty())) {
+
+								Card newCard = tiePile.popCard();
+								p1.addCard(newCard);
+
+							}
+
+							drawSolved = true;
 				
-				else {
+						}
+					}
 					
-					endHandler(p1, p2);
-					
-				}
+					if (drawSolved != true) {
 				
-			}
-			
-			else if (p2_cards < 3) {
+						if (tieDiff < 0) {
 				
-				if (!p2.isEmpty()) {
-					
-					tiePile.addCard(p2.popCard());
-					p2_cards++;
-					
-				}
+							while (!(tiePile.isEmpty())) {
+
+								Card newCard = tiePile.popCard();
+								p2.addCard(newCard);
+
+							}
+
+							drawSolved = true;
 				
-				else {
-					
-					endHandler(p1, p2);
-					
-				}
+						}
+					}
+
+				} // While loop 
 				
-			}
-			
+			} // Else
+
 		}
-		
-		if (!p1.isEmpty()) { 
-		
-			c1 = p1.popCard();
 			
-		}
-		
-		else if (!p2.isEmpty()) {
-			
-			c2 = p2.popCard();
-			
-		}
-		
-		else {
-			
-			endHandler(p1, p2);
-			
-		}
-		
-			diff = c1.getRank() - c2.getRank();
-			
-			if (diff > 0) {
-				
-				p1.addCard(c1);
-				p1.addCard(c2);
-				
-				while (!tiePile.isEmpty()) {
-					
-					p1.addCard(tiePile.popCard());
-					
-				}
-				
-			}
-			
-			else if (diff < 0) {
-				
-				p2.addCard(c1);
-				p2.addCard(c2);
-				
-				while (!tiePile.isEmpty()) {
-					
-					p2.addCard(tiePile.popCard());
-					
-			}
-				
-		}
+		endHandler(p1, p2);
 		
 	}
 	

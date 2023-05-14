@@ -1,6 +1,23 @@
 import java.util.Arrays;
 
+/**
+*
+* A solution class for the final part of exercise 7. (7.8)
+*
+* @author Kane Kennedy
+* @version 1.0
+*
+*/
+
 public class Ex7_8 {
+
+	/**
+	*
+	* Creates variables and prints the result of the method.
+	*
+	* @param args A collection of inputs specified by the user at execution.
+	*
+	*/
 
 	public static void main(String[] args) {
 		
@@ -23,6 +40,16 @@ public class Ex7_8 {
 		}
 		
 	}
+
+	/**
+	*
+	* Returns a boolean that indicates whether two words are anagrams or not.
+	*
+	* @param wordOne First word.
+	* @param wordTwo Second word.
+	* @return A boolean value indicating whether two words are anagrams or not.
+	*
+	*/
 	
 	public static boolean areAnagrams(String wordOne, String wordTwo) {
 		
@@ -38,6 +65,15 @@ public class Ex7_8 {
 		return false;
 		
 	}
+
+	/**
+	*
+	* Creates a histogram for each word received.
+	*
+	* @param input The given string to be converted to a histogram.
+	* @return An integer array that represents a histogram for each word.
+	*
+	*/
 	
 	public static int[] letterHist(String input) {
 		

@@ -1,129 +1,122 @@
 import java.math.BigInteger;
 
+/**
+*
+* A solution class for the second part of exercise 9. (9.2)
+*
+* @author Kane Kennedy
+* @version 1.0
+*
+*/
+
 public class Big {
+	
+	/**
+	*
+	* Calls methods.
+	*
+	* @param args A collection of inputs specified by the user at execution.
+	*
+	*/
 
 	public static void main(String[] args) {
 		
-		//Ex9_2_1();
+		//Ex9_2_1(1);
 		//Ex9_2_2();
-		//Ex9_2_3();
-		//Ex9_2_4();
+		//Ex9_2_3(30);
+		Ex9_2_4();
 		
 
 	}
+
+	/**
+	*
+	* Calculates factorial of a given number.
+	*
+	* @param factorial An integer, from which the factorial will be calculated.
+	*
+	*/
 	
-	public static void Ex9_2_1(int n) {
+	public static void Ex9_2_1(int factorial) {
 		
-		int factorial = 0;
-		int currentFactor = 0;
+		int result = 1;
 		
-		System.out.print("The factorial of " + n + " is: ");
+		System.out.print("The factorial of " + factorial + " is: ");
 		
-		// Start a for loop which will loop n times, and calculate the numbers in the list from n to 1.
-		
-		for (int i = n; i > 0; i--) {
+		for (int i = factorial; i != 0; i--) {
 			
-			// Obtain the initial factor.
-			
-			if (i == n) {
-			
-				currentFactor = i * (i - 1);
-			
-			}
-			
-			else if (i - 1 != 0 ) {
-			
-			currentFactor = currentFactor * (i - 1);
-			
-			}
-			
-			
-			factorial = currentFactor;
+			result = result * i;
 			
 		}
 		
 		System.out.print(factorial);
 		
 	}
+
+	/**
+	*
+	* Displays the results of factorials 1 to 30.
+	*
+	*/
 	
 	public static void Ex9_2_2() {
 		
-		int currentFactorial = 1;
+		int factorial = 1;
+		int result = 1;
 		
-		for (int i = 0; i != 31; i++) {
+		for (int i = factorial; i != 31; i++) {
 			
-			if ((i == 0) || (i == 1)) {
-				
-				currentFactorial = 1;
-				
-			}
+			result = result * i;
 			
-			else {
-			
-				currentFactorial = i * currentFactorial;
-			
-			}
-			
-			System.out.printf("%2d" + "! | " + "%1d" + "\n", i, currentFactorial);
+			System.out.printf("%2d" + "! | " + "%1d" + "\n", i, result);
 			
 		}
 		
 	}
+
+	/**
+	*
+	* Calculates factorial of a given number, involving numbers that cannot
+	* be represented using long.
+	*
+	* @param n An integer, from which the factorial will be calculated.
+	* @return A big integer value, the factorial of n.
+	*
+	*/
 	
 	public static BigInteger Ex9_2_3(int n) {
 		
-		BigInteger big_factorial = BigInteger.valueOf(0);
-		BigInteger big_currentFactor = BigInteger.valueOf(0);
+		BigInteger result = BigInteger.valueOf(1);
 		
 		System.out.print("The factorial of " + n + " is: ");
 		
-		// Start a for loop which will loop n times, and calculate the numbers in the list from n to 1.
-		
-		for (int i = n; i > 0; i--) {
+		for (int i = n; i != 0; i--) {
 			
-			// Obtain the initial factor.
-			
-			if (i == n) {
-			
-				big_currentFactor = BigInteger.valueOf(i).multiply(BigInteger.valueOf(i).subtract(BigInteger.valueOf(1)));
-			
-			}
-			
-			else if (i - 1 != 0 ) {
-			
-				big_currentFactor = big_currentFactor.multiply(BigInteger.valueOf(i).subtract(BigInteger.valueOf(1)));
-			
-			}
-			
-			big_factorial = big_currentFactor;
+			result = result.multiply(BigInteger.valueOf(i));
 			
 		}
 		
-		System.out.println(big_factorial);
+		System.out.println(result);
 		
-		return big_factorial;
+		return result;
 		
 	}
+
+	/**
+	*
+	* Displays the factorials of numbers 1 to 30
+	*
+	*/
 	
 	public static void Ex9_2_4() {
 		
-		BigInteger currentFactorial = BigInteger.valueOf(1);
+		BigInteger result = BigInteger.valueOf(1);
 		
-		for (int i = 0; i != 31; i++) {
+		for (int i = 1; i != 31; i++) {
 			
-			if ((i == 0) || (i == 1)) {
-				
-				currentFactorial = BigInteger.valueOf(1);
-				
-			}
+			result = result.multiply(BigInteger.valueOf(i));
 			
-			else {
-			
-				currentFactorial = BigInteger.valueOf(i).multiply(currentFactorial);
-			
-			}
-			
-			System.out.printf("%2d" + "! | " + "%1d" + "\n", i, currentFactorial);
+			System.out.printf("%2d" + "! | " + "%1d" + "\n", i, result);
 			
 		}
 		
