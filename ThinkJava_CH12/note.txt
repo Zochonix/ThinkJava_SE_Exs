@@ -1,0 +1,1 @@
+ex 12.4 is incomplete, despite having the resources included in the folder.
