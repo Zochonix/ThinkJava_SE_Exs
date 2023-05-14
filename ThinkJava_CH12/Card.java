@@ -1,7 +1,25 @@
+/**
+*
+* Class representing a Card object. (12)
+*
+* @author Kane Kennedy
+* @version 1.0
+*
+*/
+
 public class Card {
 	
 	private final int rank;
 	private final int suit;
+
+	/**
+	*
+	* Value Card constructor. Creates a Card object with a given rank and suit.
+	*
+	* @param rank The rank of the new Card object.
+	* @param suit The suit for the new Card object.
+	*
+	*/
 	
 	public Card(int rank, int suit) {
 		
@@ -11,6 +29,14 @@ public class Card {
 	}
 	
 	// Ex12_1
+
+	/**
+	*
+	* Creates an array full of populated Card objects.
+	*
+	* @return A new array containing a fully populated arrays of Card objects.
+	*
+	*/
 	
 	public Card[] makeDeck() {
 		
@@ -33,6 +59,15 @@ public class Card {
 	}
 	
 	// Ex12_3
+
+	/**
+	*
+	* Returns a histogram of the suits in the array of Card objects.
+	*
+	* @param cards An array of Card objects.
+	* @return Returns a histogram of the suits in the array.
+	*
+	*/
 	
 	public int[] suitHist(Card[] cards) {
 		
@@ -69,6 +104,15 @@ public class Card {
 		return histogram;
 		
 	}
+
+	/**
+	*
+	* Returns a boolean value indicating whether there is a flush in the hand of cards or not.
+	*
+	* @param cards An array of Card objects.
+	* @return A true/flase value indicating the existence of a flush or not.
+	*
+	*/
 	
 	public boolean hasFlush(Card[] cards) {
 		
@@ -115,18 +159,42 @@ public class Card {
 		return false;
 		
 	}
+
+	/**
+	*
+	* Returns the suit of the Card object.
+	*
+	* @return The suit of the Card object.
+	*
+	*/
 	
 	public int getSuit() {
 		
 		return this.getSuit();
 		
 	}
+
+	/**
+	*
+	* Returns the rank of the Card object.
+	*
+	* @return The rank of the Card object.
+	*
+	*/
 	
 	public int getRank() {
 		
 		return this.getRank();
 		
 	}
+
+	/**
+	*
+	* Returns a string stating the rank and suit of the Card object.
+	*
+	* @return A string stating the rank and suit of the given Card object.
+	*
+	*/
 	
 	public String toString() {
 		
@@ -138,12 +206,28 @@ public class Card {
 		return s;
 		
 	}
+
+	/**
+	*
+	* Returns the equality state of two Card objects.
+	*
+	* @return A true/flase value, indicating whether the two Card objects are equal or not.
+	*
+	*/
 	
 	public boolean equals(Card that) {
 		
 		return this.rank == that.rank && this.suit == that.suit;
 		
 	}
+
+	/**
+	*
+	* Compares two Card objects and returns a value indicating which is a higher rank.
+	*
+	* @return A number indicating whether two Card objects are equal or not.
+	*
+	*/
 	
 	public int compareTo(Card that) {
 		
