@@ -1,6 +1,6 @@
 # ThinkJava_SE_Exs
 
-Status: ___In Progress. Working on chapter 14.___
+Status: ___In Progress. Working on chapter 15.___
 
 - - - -
 
@@ -36,7 +36,7 @@ __Key Stuff__ :
 
 - - - -
 
-Latest Update: _Updated and uploaded the files up to chapter 13._ 
+Latest Update: _Uploaded the files for chapter 14._ 
 
 In the meantime, I hope you're all well and I'll speak with you again soon. 
 

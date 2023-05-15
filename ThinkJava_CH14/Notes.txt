@@ -1,0 +1,7 @@
+1. Ex14.1 makes use of the SmartPlayer class. The current build uses the solution from 14.3, meaning that the ArrayList contains only standard Player objects.
+
+2. Ex14.2 requires you to change the value of the i variable in the Eights constructor. (Beware that there will be a lot of text on your screen if you set it to iterate 100 times.)
+
+3. Ex14.3 won't work as it's supposed to if you don't set the number of player objects in the ArrayList to at least 2. (Will add error checking at some point.)
+
+4. I have not done a solution to 14.4.
