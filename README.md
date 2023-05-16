@@ -36,7 +36,7 @@ __Key Stuff__ :
 
 - - - -
 
-Latest Update: _Uploaded the files for chapter 14._ 
+Latest Update: _Uploaded the files for chapter 15 (Not including 15.4)._ 
 
 In the meantime, I hope you're all well and I'll speak with you again soon. 
 
