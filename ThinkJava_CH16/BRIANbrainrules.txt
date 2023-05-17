@@ -1,0 +1,11 @@
+Rules:
+
+State: 0 = on, 1 = dead, 2 = dying
+
+- Cells become alive if they have two neighbors
+- Cells that were alive go into dying state if less than two alive neighbours
+- Dying state isn't counted as on state
+- Dying cells prevent new cells being born in same space
+- Dying cells go into the off state
+
+Taken from https://conwaylife.com/wiki/OCA:Brian%27s_Brain2
