@@ -98,7 +98,7 @@ public class GridCanvas extends Canvas {
 
         try {
 
-            // Ex15.2
+            // Ex15.2 (Incomplete)
 
             if (c > numCols()) {
 
