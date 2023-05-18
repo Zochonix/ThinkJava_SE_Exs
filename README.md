@@ -1,6 +1,6 @@
 # ThinkJava_SE_Exs
 
-Status: ___In Progress. Working on chapter 17.___
+Status: ___Roughly 93% Complete.___
 
 - - - -
 
@@ -17,7 +17,7 @@ __Key Stuff__ :
 </details>
 
 <details>
-  <summary>Existence of the Rep Explained</summary>
+  <summary>Existence of the Repository Explained</summary>
   <p></p>
   <p>I made this repository because I thought it was a neat little project to work on and it has helped me get familiar with the basics of GitHub.</p>
 </details>
@@ -31,12 +31,20 @@ __Key Stuff__ :
 <details>
   <summary>Future Updates</summary>
   <p></p>
-  <p>Right now, I still have to finish off code for many of the chapters and check it before sending it to the repository so this project is still in progress and will be continuously updated, I'll probably have to update this read me though if I make the rep public. :laughing:</p>
+  <p>There will be a few more updates to compensate for the unfinished exercises. However, I cannot predict when these will be.</p>
 </details>
 
 - - - -
 
-Latest Update: _Uploaded the files for chapter 16._ 
+Latest Update: _Uploaded the files for chapter 17._
+
+Incomplete\Incorrect Solutions:
+
+13.5 (Logically incorrect?)
+14.4 (Incomplete)
+15.2 (Logically incorrect)
+17.3 (Incomplete)
+17.4 (Incomplete)
 
 In the meantime, I hope you're all well and I'll speak with you again soon. 
 

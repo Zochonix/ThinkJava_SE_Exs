@@ -1,0 +1,5 @@
+1. 17.2 doesn't use posx and posy variables, it cycles through the list of npoints for each Polygon (at each step) and identifies whether they're outside the drawing or not, which in turn determines whether the Polygon needs to be redirected or not.
+
+2. Exercise 17.3 is incomplete as I've not figured out how to compute collision detection between a MovingPolygon object and an Image object. A perfect solution would likely take some time. My current thinking is to use a bounding box on the Image object and see if it intersects with any of the points on the MovingPolygon object, however I've not yet implemented this.
+
+3. 17.4 has not been completed either.
